@@ -115,7 +115,7 @@ where
 			ProvideRuntimeApi<B> + BlockOf + AuxStore + HeaderBackend<B> + Send + Sync + 'static,
 		Client::Api: AuraApi<B, P::Public>,
 		BI: BlockImport<B, Transaction = sp_api::TransactionFor<Client, B>>
-			+ ParachainBlockImportMarker
+			// + ParachainBlockImportMarker
 			+ Send
 			+ Sync
 			+ 'static,

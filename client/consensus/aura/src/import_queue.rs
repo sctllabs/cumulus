@@ -73,7 +73,7 @@ where
 		+ UsageProvider<Block>
 		+ HeaderBackend<Block>,
 	I: BlockImport<Block, Error = ConsensusError, Transaction = sp_api::TransactionFor<C, Block>>
-		+ ParachainBlockImportMarker
+		// + ParachainBlockImportMarker
 		+ Send
 		+ Sync
 		+ 'static,
